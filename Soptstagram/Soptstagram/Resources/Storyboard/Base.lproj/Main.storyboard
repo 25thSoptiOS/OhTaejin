@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Soptstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRK-kM-gWE" userLabel="title">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Soptstagram" largeTitleDisplayMode="always" id="RCH-bS-jwo"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="프로필사진" translatesAutoresizingMaskIntoConstraints="NO" id="Pgw-Ke-3cy" userLabel="profilepic">
+                                <rect key="frame" x="20" y="112" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4Yw-vW-lUm"/>
+                                    <constraint firstAttribute="height" constant="40" id="nIs-ar-dwD"/>
+                                    <constraint firstAttribute="width" secondItem="Pgw-Ke-3cy" secondAttribute="height" multiplier="1:1" id="qu9-Fz-bm4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="oranz.23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZr-CN-rtN" userLabel="ID@top">
+                                <rect key="frame" x="60" y="115" width="56" height="18"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="oranz.23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0H-rA-ZFJ" userLabel="ID@like">
+                                <rect key="frame" x="53" y="587" width="45" height="15"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="oranz.23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPe-Z5-V0o" userLabel="ID@post">
+                                <rect key="frame" x="20" y="639" width="49" height="16"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일산 킨텍스" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fe-2D-jz6" userLabel="location">
+                                <rect key="frame" x="60" y="134" width="56" height="15"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="님이 이 게시물을 좋아합니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKz-pY-Q5U" userLabel="likethispic">
+                                <rect key="frame" x="101" y="587" width="135" height="15"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아요 22개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxh-na-CU1" userLabel="likecounts">
+                                <rect key="frame" x="20" y="615" width="63" height="16"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABw-W2-huz">
+                                <rect key="frame" x="364" y="117" width="30" height="30"/>
+                                <state key="normal" title="᛫᛫᛫">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="에펠탑" translatesAutoresizingMaskIntoConstraints="NO" id="4N3-MZ-0UU">
+                                <rect key="frame" x="0.0" y="160" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4N3-MZ-0UU" secondAttribute="height" multiplier="1:1" id="qzv-vQ-rya"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWj-Kd-n0Z" userLabel="heart">
+                                <rect key="frame" x="20" y="582" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iWj-Kd-n0Z" secondAttribute="height" multiplier="1:1" id="Cra-ET-cIb"/>
+                                    <constraint firstAttribute="height" constant="25" id="Z4o-yS-Upo"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button" image="nonHeartBtn">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" image="fillHeartBtn">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted" image="fillHeartBtn"/>
+                                <connections>
+                                    <action selector="like:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZw-eP-Rm4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#파리 #에펠탑 #노을 #그립다 #다시가고싶다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZZ-rY-yFV" userLabel="post">
+                                <rect key="frame" x="77" y="639" width="227" height="16"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0fe-2D-jz6" firstAttribute="leading" secondItem="Pgw-Ke-3cy" secondAttribute="trailing" id="1ia-8T-NSa"/>
+                            <constraint firstItem="Q0H-rA-ZFJ" firstAttribute="leading" secondItem="iWj-Kd-n0Z" secondAttribute="trailing" constant="8" id="4Ha-xx-65W"/>
+                            <constraint firstItem="GRK-kM-gWE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4Uy-IM-oVP"/>
+                            <constraint firstItem="lKz-pY-Q5U" firstAttribute="leading" secondItem="Q0H-rA-ZFJ" secondAttribute="trailing" constant="3" id="7ii-xs-i7U"/>
+                            <constraint firstItem="iZr-CN-rtN" firstAttribute="leading" secondItem="Pgw-Ke-3cy" secondAttribute="trailing" id="7kH-A9-KKo"/>
+                            <constraint firstItem="lKz-pY-Q5U" firstAttribute="top" secondItem="4N3-MZ-0UU" secondAttribute="bottom" constant="13" id="D32-Za-pIP"/>
+                            <constraint firstItem="4N3-MZ-0UU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DLh-sd-0ey"/>
+                            <constraint firstItem="Q0H-rA-ZFJ" firstAttribute="centerY" secondItem="iWj-Kd-n0Z" secondAttribute="centerY" id="Hk9-ce-bC2"/>
+                            <constraint firstItem="rxh-na-CU1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="I5f-Oq-4qi"/>
+                            <constraint firstItem="Pgw-Ke-3cy" firstAttribute="top" secondItem="GRK-kM-gWE" secondAttribute="bottom" constant="24" id="KVq-Wt-o7u"/>
+                            <constraint firstItem="kPe-Z5-V0o" firstAttribute="top" secondItem="rxh-na-CU1" secondAttribute="bottom" constant="8" id="LxN-hk-AGT"/>
+                            <constraint firstItem="ABw-W2-huz" firstAttribute="centerY" secondItem="Pgw-Ke-3cy" secondAttribute="centerY" id="SZH-Hf-El5"/>
+                            <constraint firstItem="rxh-na-CU1" firstAttribute="top" secondItem="iWj-Kd-n0Z" secondAttribute="bottom" constant="8" id="UM3-9k-cgc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ABw-W2-huz" secondAttribute="trailing" constant="20" id="VQb-C4-mQ8"/>
+                            <constraint firstItem="Pgw-Ke-3cy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WTg-j2-uli"/>
+                            <constraint firstItem="4N3-MZ-0UU" firstAttribute="top" secondItem="Pgw-Ke-3cy" secondAttribute="bottom" constant="8" id="a2c-tf-Z10"/>
+                            <constraint firstItem="iZr-CN-rtN" firstAttribute="top" secondItem="GRK-kM-gWE" secondAttribute="bottom" constant="27" id="a5j-uh-HEp"/>
+                            <constraint firstItem="kPe-Z5-V0o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="e7w-Rt-YMO"/>
+                            <constraint firstItem="5ZZ-rY-yFV" firstAttribute="leading" secondItem="kPe-Z5-V0o" secondAttribute="trailing" constant="8" id="e8B-N3-ldc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4N3-MZ-0UU" secondAttribute="trailing" id="fe2-AT-ORL"/>
+                            <constraint firstItem="GRK-kM-gWE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fhA-PV-yjV"/>
+                            <constraint firstItem="GRK-kM-gWE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gcx-cn-PmG"/>
+                            <constraint firstItem="4N3-MZ-0UU" firstAttribute="top" secondItem="0fe-2D-jz6" secondAttribute="bottom" constant="11" id="mYe-Ux-IGt"/>
+                            <constraint firstItem="0fe-2D-jz6" firstAttribute="top" secondItem="iZr-CN-rtN" secondAttribute="bottom" constant="1" id="pJK-Qm-JVk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GRK-kM-gWE" secondAttribute="trailing" id="qMs-P2-MBC"/>
+                            <constraint firstItem="iWj-Kd-n0Z" firstAttribute="top" secondItem="4N3-MZ-0UU" secondAttribute="bottom" constant="8" id="qXM-lk-55U"/>
+                            <constraint firstItem="Q0H-rA-ZFJ" firstAttribute="top" secondItem="4N3-MZ-0UU" secondAttribute="bottom" constant="13" id="sBK-1O-g5n"/>
+                            <constraint firstItem="iWj-Kd-n0Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="taQ-GL-xSN"/>
+                            <constraint firstItem="4N3-MZ-0UU" firstAttribute="top" secondItem="ABw-W2-huz" secondAttribute="bottom" constant="13" id="uca-BY-aqE"/>
+                            <constraint firstItem="5ZZ-rY-yFV" firstAttribute="centerY" secondItem="kPe-Z5-V0o" secondAttribute="centerY" id="vej-LG-ab7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="heartBtn" destination="iWj-Kd-n0Z" id="uiD-ly-bKc"/>
+                        <outlet property="likeCounts" destination="rxh-na-CU1" id="gfp-Cy-onQ"/>
+                        <outlet property="likeID" destination="Q0H-rA-ZFJ" id="t5f-vL-Ygx"/>
+                        <outlet property="likesThisPost" destination="lKz-pY-Q5U" id="0BT-AR-8Fp"/>
+                        <outlet property="profilePic" destination="Pgw-Ke-3cy" id="JAo-sb-D2j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fillHeartBtn" width="200" height="200"/>
+        <image name="nonHeartBtn" width="84" height="84"/>
+        <image name="에펠탑" width="1016" height="1016"/>
+        <image name="프로필사진" width="1024" height="1024"/>
+    </resources>
+</document>
